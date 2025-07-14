@@ -1,0 +1,9 @@
+{
+	"name": "zoiee",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f27496b1-4942-4912-b2d7-316d013ca6e9",
+		"tenantId": "76a2ae5a-9f00-4f6b-95ed-5d33d77c4d61"
+	}
+}
