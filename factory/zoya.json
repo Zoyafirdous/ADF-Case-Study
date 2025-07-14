@@ -1,0 +1,9 @@
+{
+	"name": "zoya",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5d3c33c9-ab56-4f99-9e68-70315a59e4ed",
+		"tenantId": "76a2ae5a-9f00-4f6b-95ed-5d33d77c4d61"
+	}
+}
