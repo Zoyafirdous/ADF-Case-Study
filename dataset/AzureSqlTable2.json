@@ -1,5 +1,5 @@
 {
-	"name": "AzureSqlTable1",
+	"name": "AzureSqlTable2",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureSqlDatabase1",
@@ -10,7 +10,7 @@
 		"schema": [
 			{
 				"name": "SalesDate",
-				"type": "date"
+				"type": "varchar"
 			},
 			{
 				"name": "SalesMan",
@@ -36,11 +36,15 @@
 				"type": "decimal",
 				"precision": 12,
 				"scale": 2
+			},
+			{
+				"name": "ErrorReason",
+				"type": "varchar"
 			}
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "Sales_details"
+			"table": "Sales_details_fail"
 		}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"

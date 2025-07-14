@@ -10,8 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "Employee_Details.csv",
-				"container": "input1"
+				"fileName": "Sales.csv",
+				"container": "sales"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
@@ -20,27 +20,27 @@
 		},
 		"schema": [
 			{
-				"name": "EmployeeID",
+				"name": "SalesDate",
 				"type": "String"
 			},
 			{
-				"name": "EmployeeName",
+				"name": "SalesMan",
 				"type": "String"
 			},
 			{
-				"name": "Gender",
+				"name": "Item",
 				"type": "String"
 			},
 			{
-				"name": "Location",
+				"name": "Units",
 				"type": "String"
 			},
 			{
-				"name": "Designation",
+				"name": "Unit_price",
 				"type": "String"
 			},
 			{
-				"name": "Salary",
+				"name": "Sale_amt",
 				"type": "String"
 			}
 		]
