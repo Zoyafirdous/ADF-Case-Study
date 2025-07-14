@@ -1,0 +1,17 @@
+{
+	"name": "AzureSqlDatabase3",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "zoyaserver.database.windows.net",
+			"database": "zoya",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "zoya firdous",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEFGMkVDNjlELTRBMzYtNDMzRC04REUzLTQwNDc1OTJBOUZGQ19lMWQ0MmE2OS1jZWNiLTQ3NjUtYWZkNy0zNjIwNjA4Y2VmMzEiDQp9"
+		}
+	}
+}
