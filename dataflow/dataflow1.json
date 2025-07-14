@@ -15,10 +15,24 @@
 			"sinks": [
 				{
 					"dataset": {
-						"referenceName": "DelimitedText4",
+						"referenceName": "DelimitedText5",
 						"type": "DatasetReference"
 					},
-					"name": "sink1"
+					"name": "sink2"
+				},
+				{
+					"dataset": {
+						"referenceName": "DelimitedText6",
+						"type": "DatasetReference"
+					},
+					"name": "sink3"
+				},
+				{
+					"dataset": {
+						"referenceName": "DelimitedText7",
+						"type": "DatasetReference"
+					},
+					"name": "sink4"
 				}
 			],
 			"transformations": [
@@ -59,13 +73,27 @@
 				"     disjoint: false) ~> split2@(silver, silverstream)",
 				"split2@silver split(Medal == \"bronze\",",
 				"     disjoint: false) ~> split3@(bronze, bronzestream)",
+				"split1@gold sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> sink2",
+				"split2@silver sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> sink3",
 				"split3@bronze sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     umask: 0022,",
 				"     preCommands: [],",
 				"     postCommands: [],",
 				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> sink1"
+				"     skipDuplicateMapOutputs: true) ~> sink4"
 			]
 		}
 	}
